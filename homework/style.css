@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: #3B3F45;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header, footer {
+    text-align: center;
+    background: #4A4F56;
+    color: #Eb7E7F;
+}
+
+header, footer div {
+    padding: 0.5rem;
+} {
+    padding: 0.5rem;
+}
+
+footer, .container {
+    width: 70%;
+    margin: 2rem auto;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+main .wrapper:nth-child(odd) {
+    background: #88839E;
+}
+
+main .wrapper:nth-child(even) {
+    background: #7A7593;
+}
+
+main .wrapper:nth-child(4) {
+    background: #625E77;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.wrapper div {
+    display: inline-block;
+}
+
+.wrapper div i {
+    margin: 0 10px;
+}
+
+span {
+    font-size: 0.7rem;
+    vertical-align: middle;
+}
+
+
+
