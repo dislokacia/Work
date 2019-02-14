@@ -6,19 +6,24 @@ body {
     font-size: 16px;
 }
 
-header, footer {
+header,
+footer {
     text-align: center;
     background: #4A4F56;
     color: #Eb7E7F;
 }
 
-header, footer div {
-    padding: 0.5rem;
-} {
+header,
+footer div {
     padding: 0.5rem;
 }
 
-footer, .container {
+    {
+    padding: 0.5rem;
+}
+
+footer,
+.container {
     width: 70%;
     margin: 2rem auto;
 }
@@ -58,6 +63,3 @@ span {
     font-size: 0.7rem;
     vertical-align: middle;
 }
-
-
-
