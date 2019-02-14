@@ -6,6 +6,10 @@ body {
     font-size: 16px;
 }
 
+header {
+    font-size: 1.7rem;
+}
+
 header,
 footer {
     text-align: center;
@@ -15,7 +19,7 @@ footer {
 
 header,
 footer div {
-    padding: 0.5rem;
+    padding: 0.3rem;
 }
 
     {
@@ -62,4 +66,8 @@ main .wrapper:nth-child(4) {
 span {
     font-size: 0.7rem;
     vertical-align: middle;
+}
+
+footer {
+    font-size: 1.5rem;
 }
