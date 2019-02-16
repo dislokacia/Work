@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    background: #3B3F45;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 1.7rem;
+}
+
+header,
+footer {
+    text-align: center;
+    background: #4A4F56;
+    color: #Eb7E7F;
+}
+
+header,
+footer div {
+    padding: 0.3rem;
+}
+
+footer,
+.wrapper {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.wrapper {
+    background-color: #88839E;
+}
+
+.list__item {
+    padding: 5px;
+    border: 2px solid transparent;
+}
+
+small {
+    opacity: 0.6;
+}
+
+.list__item:hover {
+    background-color: #7A7593;
+    border-color: white;
+    border-left: none;
+    border-right: none;
+
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+footer {
+    font-size: 1.5rem;
+}
