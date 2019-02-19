@@ -1,0 +1,178 @@
+/* styles goes here */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F1F1F1;
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 15px;
+    color: #c2c2c2;
+    font-weight: 900;
+}
+
+form {
+    margin: 15px auto;
+    margin-bottom: 90px;
+    width: 1170px;
+}
+
+#search-string {
+    font-size: 80px;
+    color: #ec5a62;
+    background-color: transparent;
+    border: none;
+    margin-left: 20px;
+}
+
+#search-string:hover,#button:hover {
+    box-shadow: 2px 2px 5px #c2c2c2;;
+}
+
+#search-string::placeholder {
+    color: #c2c2c2;
+    font-weight: 700;
+    font-size: 100px;
+}
+
+#button {
+    background-image: url(../img/search.png);
+    background-size: cover;
+    width: 90px;
+    height: 90px;
+    vertical-align: top;
+    margin-left: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+input:active, input:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+
+.col>div {
+    background-color: rgba(118,117,128,0.05);
+    margin: 5px 25px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 320px;
+}
+
+/* .col {
+    margin-left: -20px;
+} */
+
+h3 {
+    margin-left: 25px;
+}
+
+.col>div:hover {
+    background-color: rgba(118,117,128,0.1);
+}
+
+.col>div:hover p a {
+    color: #ec5a62;
+}
+
+.col .img-style,
+.col p {
+    display: inline-block;
+}
+
+.img-style {
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.popular .img-style,
+.recent .img-style {
+    border-radius: 0;
+}
+
+.col p a {
+    text-decoration: none;
+    color: #c2c2c2;
+}
+    
+.people-1 div {
+    background-image: url(../img/avatars/SaraSoueidan.jpeg);
+}
+
+.people-2 div {
+    background-image: url(../img/avatars/RachelSmith.png);
+}
+
+.people-3 div {
+    background-image: url(../img/avatars/PeterFinlan.jpeg);
+}
+
+.people-4 div {
+    background-image: url(../img/avatars/PatrickCox.png);
+}
+
+.people-5 div {
+    background-image: url(../img/avatars/TimHolman.jpeg);
+}
+
+.people-6 div {
+    background-image: url(../img/avatars/ShaunDona.jpeg);
+}
+
+.popular-1 div {
+    background-image: url(../img/thumbs/PagePreloadingEffect.png);
+}
+
+.popular-2 div {
+    background-image: url(../img/thumbs/ArrowNavigationStyles.png);
+}
+
+.popular-3 div {
+    background-image: url(../img/thumbs/HoverEffectsIdeasNew.png);
+}
+
+.popular-4 div {
+    background-image: url(../img/thumbs/FreebieHalcyonDays.png);
+}
+
+.popular-5 div {
+    background-image: url(../img/thumbs/ArticleIntroEffects.png);
+}
+
+.popular-6 div {
+    background-image: url(../img/thumbs/DraggableDualViewSlideshow.png);
+}
+
+.recent-1 div {
+    background-image: url(../img/thumbs/TooltipStylesInspiration.png);
+}
+
+.recent-2 div {
+    background-image: url(../img/thumbs/AnimatedHeaderBackgrounds.png);
+}
+
+.recent-3 div {
+    background-image: url(../img/thumbs/OffCanvas.png);
+}
+
+.recent-4 div {
+    background-image: url(../img/thumbs/TabStyles.png);
+}
+
+.recent-5 div {
+    background-image: url(../img/thumbs/ResponsiveSVGs.png);
+}
+
+.recent-6 div {
+    background-image: url(../img/thumbs/NotificationStyles.png);
+}
+
+
+
+
