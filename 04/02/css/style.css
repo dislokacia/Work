@@ -1,0 +1,27 @@
+/* styles goes here */
+body {
+    background-color: #1d1b1c;
+    color: #c8c6c7;
+    text-align: center;
+}
+
+.img {
+    width: 80px; 
+    height: 80px;
+    background-color: #ffad00;
+    text-align: center;
+    padding-top: 22px;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin: 30px auto;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.2;
+    color: #949393;
+}
+
