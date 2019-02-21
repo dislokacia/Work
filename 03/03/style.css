@@ -1,0 +1,52 @@
+body {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 18px;
+    color: gray;
+}
+
+.wrapper {
+    width: 75%;
+    margin: 10px auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-1 {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row-1 div {
+    margin-left: 40px;
+}
+
+.row-2 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row-2 div {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.row-3 {
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.row-3 div {
+    font-size: 12px;
+}
+
+.row-3 div:first-child img + p {
+    display: inline-block;
+}
+
