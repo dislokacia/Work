@@ -89,6 +89,23 @@ li a {
     padding-bottom: 10px;
 }
 
+.up {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    font-size: 50px;
+}
+
+.up a {
+    text-decoration: none;
+    color: #e10011;
+    opacity: .5;
+}
+
+.up:hover a {
+    opacity: 1;
+}
+
 .first-container {
     font-family: 'Roboto';
 }
