@@ -1,513 +1,487 @@
 /* styles goes here */
-html, body {
-      margin: 0;
-      padding: 0;
-    }
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
-    * {
-      box-sizing: border-box;
-    }
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #eeeeee;
+    overflow-x: hidden;
 }
 
-    .slider {
-        width: 50%;
-        margin: 100px auto;
-    }
-
-    .slick-slide {
-      margin: 0px 40px;
-    }
-
-    .slick-slide img {
-      width: 100%;
-    }
-
-    .slick-prev:before,
-    .slick-next:before {
-      color: black;
-    }
-
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-    
-    .slick-active {
-      opacity: 1;
-    }
-
-    .slick-current {
-      opacity: 1;
-    }
-
-h4:first-child {
-    font-family: 'Roboto';
-    color:  #303030;
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 27px;
-    text-align: left;
-    padding-top: 50px;
-    margin: 0;
-    margin-left: 15px;
+.slider {
+    width: 50%;
+    margin: 100px auto;
 }
 
-.navig {
-    margin-right: 510px;
+.slick-slide {
+    margin: 0px 40px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+
+.slick-active {
+    opacity: 1;
+}
+
+.slick-current {
+    opacity: 1;
+}
+
+
+.main_header>div {
+    display: inline-block;
+}
+
+.logo a {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.nav {
+    width: calc(100% - 291px);
+    text-align: right;
 }
 
 ul {
     text-align: right;
     margin-top: 50px;
+    padding: 0;
 }
 
-    ul > li {
-        display: inline-block;
-        margin-right: 38px;
-    }
+ul>li {
+    display: inline-block;
+    margin-right: 38px;
+}
 
-    li:last-child {
-        margin-right: 0;
-    }
+li:last-child {
+    margin-right: 0;
+}
 
 li a {
     text-decoration: none;
     font-family: 'Roboto';
-color:  #303030;
-font-size: 18px;
-font-weight: 400;
-line-height: 27px;
-text-align: left;
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-    .first-container {
-        font-family: 'Roboto';
-    }
+.first-container {
+    font-family: 'Roboto';
+}
 
-    h2 { 
-        font-style: normal;
-        color:  #303030;
-        font-size: 150px;
-        font-weight: 900;
-        line-height: 150px;
-        text-align: right;
-        margin-top: 105px;
-        margin-bottom: 40px;
-    }
+h2 {
+    font-style: normal;
+    color: #303030;
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    text-align: right;
+    margin-top: 105px;
+    margin-bottom: 40px;
+}
 
-    span {
-        margin-left: -35px;
-    }
+span {
+    margin-left: -35px;
+}
 
-    .first-container p {
-        font-style: normal;
-        color:  #303030;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 36px;
-        text-align: right;
-        margin: 0;
-    }
+.first-container p {
+    font-style: normal;
+    color: #303030;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    text-align: right;
+    margin: 0;
+}
 
-    .first-container a {
-        font-weight: bold;
-        font-style: normal;
-        color:  #e10011;
-        text-decoration: none;
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 36px;
-        display: block;
-        text-align: right;
-        margin-top: 5px;
-        margin-bottom: 70px;
-    }
+.first-container a {
+    font-weight: bold;
+    font-style: normal;
+    color: #e10011;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    margin-bottom: 70px;
+}
 
-    .img-1 {
-        background-image: url(../img/headphones_black_white.png);
-        width: 365px;;
-        height: 491px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 105px;
-        margin-left: 74px;
-    }
+.img-1 {
+    background-image: url(../img/headphones_black_white.png);
+    width: 365px;
+    ;
+    height: 491px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 105px;
+    margin-left: 74px;
+}
 
-    .img-2 {
-        background-image: url(../img/headphones_blak_red.png);
-        width: 365px;;
-        height: 491px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 105px;
-        margin-left: 74px;
-    }
+.img-2 {
+    background-image: url(../img/headphones_blak_red.png);
+    width: 365px;
+    ;
+    height: 491px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 105px;
+    margin-left: 74px;
+}
 
-    .img-3 {
-        background-image: url(../img/headphones_blak_gold.png);
-        width: 365px;;
-        height: 491px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 105px;
-        margin-left: 74px;
-    }
+.img-3 {
+    background-image: url(../img/headphones_blak_gold.png);
+    width: 365px;
+    ;
+    height: 491px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 105px;
+    margin-left: 74px;
+}
 
-    .container-2 {
-        background-color: #fff;
-        margin-top: 100px;
-        text-align: center;
-    }
+.container-2 {
+    background-color: #fff;
+    margin-top: 100px;
+    text-align: center;
+}
 
-    .content {
-        margin-left: 282px;
-    }
+.text-1 {
+    text-align: center;
+}
 
-    .container-2 h4 {
-        margin-left: -10px;
-        margin-top: 25px;
-        margin-bottom: -30px;
-        padding: 0;
-        font-family: 'Raleway';
-        font-weight: 900;
-        font-style: normal;
-        color:  #303030;
-        font-size: 48px;
-        line-height: 150px;
-        text-align: center;
-    }
+.container-2 h4 {
+    margin-left: -10px;
+    margin-top: 25px;
+    margin-bottom: -50px;
+    padding: 0;
+    font-family: 'Raleway';
+    font-weight: 900;
+    font-style: normal;
+    color: #303030;
+    font-size: 48px;
+    line-height: 150px;
+    text-align: center;
+}
 
-    .star {
-        background-image: url(../img/star.png);
-        width: 213px;
-        height: 17px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 180px;
-        margin-bottom: 20px;
-    }
+.star {
+    background-image: url(../img/star.png);
+    width: 213px;
+    height: 17px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px auto;
+}
 
-    .container-2 p {
-        font-family: 'Raleway';
-        color:  #303030;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        margin-bottom: 60px;
-    }
+.container-2 p {
+    font-family: 'Raleway';
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 60px;
+}
 
-    .img-4 {
-        background-image: url(../img/microphone.png);
-        width: 692px;
-        height: 387px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 72px;
-    }
+.wrapper-images_1,
+.wrapper-images_2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 87px;
+}
 
-    .img-5 {
-        background-image: url(../img/headphones-2.png);
-        width: 328px;
-        height: 387px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 80px;
-    }
+.wrapper-images_1 p,
+.wrapper-images_2 p {
+    font-family: 'Roboto';
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 230px;
+    line-height: 1.5;
+}
 
-    .img-6 {
-        background-image: url(../img/pulse.png);
-        width: 328px;
-        height: 387px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 73px;
-        margin-top: 36px;
-        border-radius: 5px;
-    }
+.wrapper-images_1 a,
+.wrapper-images_2 a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 16px;
+    border-bottom: 5px solid #fff;
+}
 
-    .img-7 {
-        background-image: url(../img/Casual-Shoes-For-Men-2.png);
-        width: 328px;
-        height: 387px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 128px;
-        margin-top: 36px;
-        margin-bottom: 72px;
-    }
+.img {
+    width: 100%;
+    height: 387px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
-    .img-8 {
-        background-image: url(../img/tumblr_nko8p7po0T1qddxjwo3_1280.png);
-        width: 328px;
-        height: 387px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-left: 80px;
-        margin-top: 36px;
-    }
+.img-4 {
+    background-image: url(../img/microphone.png);
+    max-width: 692px;
 
-    /* .img-41 {
-        position: absolute;
-        width: 692px;
-        height: 387px;
-        border-radius: 5px;
-        background-color: #e10011;
-        top: 1147px;
-        left: 185px;
-    }
+}
 
-    .img-41 p {
-        font-family: 'Roboto';
-        color:  #ffffff;
-        font-size: 30px;
-        font-weight: 900;
-        text-align: left;
-        margin-left: 50px;
-        margin-top: 250px;
-        line-height: 1.2;
-    }
+.img-5 {
+    background-image: url(../img/headphones-2.png);
+    max-width: 328px;
+}
 
-    .img-51 {
-        position: absolute;
-        width: 328px;
-        height: 387px;
-        border-radius: 5px;
-        background-color: #e10011;
-        top: 1147px;
-        left: 911px;
-    }
+.wrapper-images_2 .img {
+    margin-top: 36px;
+    max-width: 328px;
+}
 
-    .img-51 p {
-        font-family: 'Roboto';
-        color:  #ffffff;
-        font-size: 30px;
-        font-weight: 900;
-        text-align: left;
-        margin-left: 50px;
-        margin-top: 250px;
-        line-height: 1.2;
-    }
+.img-6 {
+    background-image: url(../img/pulse.png);
+    border-radius: 5px;
+}
 
-    .img-61 {
-        position: absolute;
-        width: 328px;
-        height: 387px;
-        border-radius: 5px;
-        background-color: #e10011;
-        top: 1570px;
-        left: 187px;
-    }
+.img-7 {
+    background-image: url(../img/Casual-Shoes-For-Men-2.png);
+}
 
-    .img-61 p {
-        font-family: 'Roboto';
-        color:  #ffffff;
-        font-size: 30px;
-        font-weight: 900;
-        text-align: left;
-        margin-left: 50px;
-        margin-top: 250px;
-        line-height: 1.2;
-    }
+.img-8 {
+    background-image: url(../img/tumblr_nko8p7po0T1qddxjwo3_1280.png);
+    margin-bottom: 72px;
+}
 
-    .img-71 {
-        position: absolute;
-        width: 328px;
-        height: 387px;
-        border-radius: 5px;
-        background-color: #e10011;
-        top: 1570px;
-        left: 548px;
-    }
+.img-in {
+    position: absolute;
+    height: 387px;
+    background-color: #e10011;
+    border-radius: 5px;
+}
 
-    .img-71 p {
-        font-family: 'Roboto';
-        color:  #ffffff;
-        font-size: 30px;
-        font-weight: 900;
-        text-align: left;
-        margin-left: 50px;
-        margin-top: 250px;
-        line-height: 1.2;
-    }
+.wrapper-images_2 .img-in {
+    top: 1147px;
+}
 
-    .img-81 {
-        position: absolute;
-        width: 328px;
-        height: 387px;
-        border-radius: 5px;
-        background-color: #e10011;
-        top: 1570px;
-        left: 911px;
-    }
+.img-41 {
+    width: 692px;
+    left: 185px;
+}
 
-    .img-81 p {
-        font-family: 'Roboto';
-        color:  #ffffff;
-        font-size: 30px;
-        font-weight: 900;
-        text-align: left;
-        margin-left: 50px;
-        margin-top: 250px;
-        line-height: 1.2;
-    }
+.img-51 {
+    width: 328px;
+    left: 911px;
+}
 
+.wrapper-images_2 .img-in {
+    width: 328px;
+    top: 1570px;
+}
 
-    .img-41, .img-51, .img-61, .img-71, .img-81 {
-        opacity: 0;
-    }
+.img-61 {
+    left: 187px;
+}
 
-    .img-4:hover .img-41 {
-        opacity: 1;
-    } */
+.img-71 {
+    left: 548px;
+}
 
-    .container-3 {
-        margin-top: 20px;
-        text-align: center;
-    }
+.img-81 {
+    left: 911px;
+}
 
-    .container-3 h3 {
-        font-family: 'Raleway';
-        font-style: normal;
-        color:  #303030;
-        font-size: 48px;
-        font-weight: 900;
-        line-height: 150px;
-        text-align: center;
-        margin-bottom: 0;
-    }
+.img-41,
+.img-51,
+.img-61,
+.img-71,
+.img-81 {
+    display: none;
+}
 
-    .container-3 p {
-        font-family: 'Raleway';
-        font-style: normal;
-        color:  #303030;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        margin-top: -30px;
-        margin-bottom: 35px;
-    }
+.img-4:hover .img-41 {
+    display: block;
+}
 
-    form {
-        margin-left: -220px;
-    }
+.img-5:hover .img-51 {
+    display: block;
+}
 
-    #email {
-        width: calc(702px - 208px);
-        height: 70px;
-        border-bottom-left-radius: 35px;
-        border-top-left-radius: 35px;
-        border: none;
-        position: relative;
-        padding-left: 60px;
-        font-family: 'Raleway';
-        font-style: normal;
-        color:  #979797;
-        font-size: 18px;
-        font-weight: 400;
-    }
+.img-6:hover .img-61 {
+    display: block;
+}
 
-    #email:focus {
-        outline: none;
-    }
+.img-7:hover .img-71 {
+    display: block;
+}
 
-    #email::placeholder {
-        font-family: 'Raleway';
-        font-style: normal;
-        color:  #979797;
-        font-size: 18px;
-        font-weight: 600;
-        font-style: italic;
-        line-height: 24px;
-        text-align: center;
-        padding-right: 280px;
-    }
+.img-8:hover .img-81 {
+    display: block;
+}
 
-    #button {
-        width: 208px;
-        height: 70px;
-        border-bottom-right-radius: 35px;
-        border-top-right-radius: 35px;
-        background-color: #e10011;
-        color: #fff;
-        font-family: 'Roboto';
-        font-weight: 900;
-        font-size: 18px;
-        text-align: center;
-        padding: 0;
-        border: none;
-        margin-left: -3px;
-    }
+.container-3 {
+    margin-top: 20px;
+    text-align: center;
+}
 
-    label {
-        color:  #979797;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        position: absolute;
-        padding-top: 25px;
-        padding-left: 25px;
-        z-index: 10;
-    }
+.container-3 h3 {
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #303030;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 150px;
+    text-align: center;
+    margin-bottom: 0;
+}
 
-    .fa-caret-right {
-        color:  #fff;
-        padding-left: 132px;
-    }
+.container-3 p {
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #303030;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 35px;
+}
 
-    .circle {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        background-color:  #ffffff;
-        margin-top: 100px;
-        margin-bottom: 60px;
-    }
+.form {
+    margin: 0 auto;
+}
 
-    .icon-1 {
-        text-align: center;
-        padding-top: 17px;
-    }
+#email {
+    width: 494px;
+    height: 70px;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    border: none;
+    position: relative;
+    padding-left: 60px;
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #979797;
+    font-size: 18px;
+    font-weight: 400;
+}
 
-    .icon-2 {
-        text-align: center;
-        padding-top: 22px;
-    }
+#email:focus {
+    outline: none;
+}
 
-    .icon-3 {
-        text-align: center;
-        padding-top: 17px;
-    }
+#email::placeholder {
+    font-family: 'Raleway';
+    font-style: normal;
+    color: #979797;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 24px;
+    text-align: center;
+    padding-right: 280px;
+}
 
-    .icon-4 {
-        text-align: center;
-        padding-top: 20px;
-    }
+#button {
+    width: 208px;
+    height: 70px;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    background-color: #e10011;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    border: none;
+    margin-left: -3px;
+    cursor: pointer;
+}
 
-    .content-1 {
-        margin-left: 360px;
-    }
+label {
+    color: #979797;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 25px;
+    z-index: 10;
+    cursor: pointer;
+}
 
-    footer {
-        font-family: 'Raleway';
-        color:  #979797;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+.fa-caret-right {
+    color: #fff;
+    padding-left: 132px;
+}
 
-    footer a {
-        text-decoration: none;
-        color: #303030;
-    }
+.wrapper-items>div {
+    display: inline-block;
+}
 
-    .content-2 {
-        margin-left: 255px;
-    }
+.item {
+    margin: 100px 10px 60px;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.icon-1 {
+    text-align: center;
+    padding-top: 17px;
+}
+
+.icon-2 {
+    text-align: center;
+    padding-top: 22px;
+}
+
+.icon-3 {
+    text-align: center;
+    padding-top: 17px;
+}
+
+.icon-4 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer {
+    font-family: 'Raleway';
+    color: #979797;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #303030;
+}

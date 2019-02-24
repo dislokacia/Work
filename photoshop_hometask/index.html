@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
@@ -21,15 +21,19 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col col-3 navig animated fadeInLeft fast">
-                <h4>ProductMan</h4>
-            </div>
-            <div class="col col-4  animated fadeInRight fast">
-                <ul>
-                    <li><a href="#">Recent Work</a></li>
-                    <li><a href="#">Featured Product</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
-                </ul>
+            <div class="col col-12">
+                <div class="main_header">
+                    <div class="logo animated fadeInLeft fast"><a href="#"><img src="img/logo.png" alt="logo"></a></div>
+
+
+                    <div class="nav animated fadeInRight fast">
+                        <ul>
+                            <li><a href="#">Recent Work</a></li>
+                            <li><a href="#">Featured Product</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -81,105 +85,115 @@
     <div class="container container-2">
         <div class="row">
 
-            <div class="col col-6 content">
-                <h4>Featured Product</h4>
-                <div class="star"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    ut
-                    labore
-                    et dolore magna aliqua. </p>
+            <div class="col col-12">
+                <div class="text-1">
+                    <h4>Featured Product</h4>
+                    <div class="star"></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>eiusmod tempor incididunt
+                        ut
+                        labore
+                        et dolore magna aliqua. </p>
+                </div>
             </div>
 
         </div>
         <div class="row">
-            <div class="col col-7">
-               <div class="img-4"></div>
-               <!-- <div class="img-41">
-                   <p>Minimal Product<br>Design</p>
-               </div> -->
-            </div>
-            <div class="col col-3">
-              <div class="img-5"></div>
-              <!-- <div class="img-51">
-                    <p>Minimal Product<br>Design</p>
-              </div> -->
+            <div class="wrapper-images_1">
+                <div class="img img-4">
+                    <div class="img-in img-41">
+                        <p>Minimal Product<br><a href="#" target="_blank">Design</a></p>
+                    </div>
+                </div>
+                <div class="img img-5">
+                    <div class="img-in img-51">
+                        <p>Minimal Product<br><a href="#" target="_blank">Design</a></p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col col-3">
-             <div class="img-6"></div>
-             <!-- <div class="img-61">
-                    <p>Minimal Product<br>Design</p>
-             </div> -->
-            </div>
-            <div class="col col-4">
-             <div class="img-7"></div> 
-             <!-- <div class="img-71">
-                    <p>Minimal Product<br>Design</p>
-             </div> -->
-            </div>
-            <div class="col col-3">
-             <div class="img-8">   </div>
-             <!-- <div class="img-81">
-                    <p>Minimal Product<br>Design</p>
-             </div> -->
+            <div class="wrapper-images_2">
+                <div class="img img-6">
+                    <div class="img-in img-61">
+                        <p>Minimal Product<br><a href="#" target="_blank">Design</a></p>
+                    </div>
+                </div>
+                <div class="img img-7">
+                    <div class="img-in img-71">
+                        <p>Minimal Product<br><a href="#" target="_blank">Design</a></p>
+                    </div>
+                </div>
+                <div class="img img-8">
+                    <div class="img-in img-81">
+                        <p>Minimal Product<br><a href="#" target="_blank">Design</a></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="container container-3">
         <div class="row">
-            <div class="col col-6 content">
-                <h3>PRODUCTMAN NEWS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. </p>
+            <div class="col col-12">
+                <div class="text-1">
+                    <h3>PRODUCTMAN NEWS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do<br>eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. </p>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col col-8 content">
-                <form action="#" method="get">
-                    <label for="email"><i class="far fa-envelope"></i></label>
-                    <input type="email" name="email" id="email" placeholder="Enter your email address">
-                    <label for="button"><i class="fas fa-caret-right"></i></label>
-                    <input type="submit" id="button" value="SUBSCRIBE">
-                </form>
+            <div class="col col-12">
+                <div>
+                    <form action="#" method="get">
+                        <label for="email"><i class="far fa-envelope"></i></label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email address">
+                        <label for="button"><i class="fas fa-caret-right"></i></label>
+                        <input type="submit" id="button" value="SUBSCRIBE">
+                    </form>
+                </div>
             </div>
         </div>
     </div>
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col col-1 content-1">
-                    <a href="http://facebook.com" target="_blank">
-                        <div class="circle animated rotateIn fast">
-                            <div class="icon-1"><img src="img/fb.png" alt="facebook"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-1">
-                    <a href="http://twitter.com" target="_blank">
-                        <div class="circle animated rotateIn fast">
-                            <div class="icon-2"><img src="img/twitter.png" alt="twitter"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-1">
-                    <a href="http://youtube.com" target="_blank">
-                        <div class="circle animated rotateIn fast">
-                            <div class="icon-3"><img src="img/you-tube.png" alt="youtube"></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col col-1">
-                    <a href="#" target="_blank">
-                        <div class="circle animated rotateIn fast">
-                            <div class="icon-4"><img src="img/mon.png" alt="manamana"></div>
-                        </div>
-                    </a>
+                <div class="wrapper-items">
+                    <div class="item item-1">
+                        <a href="http://facebook.com" target="_blank">
+                            <div class="circle animated rotateIn fast">
+                                <div class="icon-1"><img src="img/fb.png" alt="facebook"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item item-2">
+                        <a href="http://twitter.com" target="_blank">
+                            <div class="circle animated rotateIn fast">
+                                <div class="icon-2"><img src="img/twitter.png" alt="twitter"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item item-3">
+                        <a href="http://youtube.com" target="_blank">
+                            <div class="circle animated rotateIn fast">
+                                <div class="icon-3"><img src="img/you-tube.png" alt="youtube"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item item-4">
+                        <a href="#" target="_blank">
+                            <div class="circle animated rotateIn fast">
+                                <div class="icon-4"><img src="img/mon.png" alt="manamana"></div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col col-6 content-2">
-                    <p>&copy; Copyright <a href="#" target="_blank">Your Company</a> ltd 2016. All Rights Reserved.</p>
+                <div class="col col-12">
+                    <div class="text-1">
+                        <p>&copy; Copyright <a href="#" target="_blank">Your Company</a> ltd 2016. All Rights Reserved.</p>
+                    </div>
                 </div>
             </div>
         </div>
