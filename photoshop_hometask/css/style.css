@@ -239,9 +239,13 @@ span {
     color: #ffffff;
     font-size: 30px;
     font-weight: 900;
-    text-align: left;
+    /* text-align: left;
     margin-left: 50px;
-    margin-top: 230px;
+    margin-top: 230px; */
+    position: relative;
+    left: 40px;
+    top: 230px;
+    text-align: left;
     line-height: 1.5;
 }
 
@@ -295,7 +299,7 @@ span {
     height: 387px;
     background-color: #e10011;
     border-radius: 5px;
-    top: -230px;
+    top: -30px;
 }
 
 .wrapper-images_2 .img-in {
