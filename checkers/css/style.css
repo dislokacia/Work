@@ -1,0 +1,54 @@
+/* styles goes here */
+.platform {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 440px;
+    height: 440px;
+    background-color: rgb(252, 248, 238);
+    border: 20px solid beige;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.square {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.a {
+    background-color: transparent;
+}
+
+.b {
+    background-color: rgb(122, 84, 84);
+}
+
+.checker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 36px;
+    height: 36px;
+    border: 18px solid #fff; 
+    border-radius: 50%;
+}
+
+.checker-b {
+    border: 18px solid black;
+}
+
+.checker:hover {
+    border: 20px solid white;
+}
+
+.checker-b:hover {
+    border: 20px solid black;
+}
