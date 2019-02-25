@@ -239,9 +239,6 @@ span {
     color: #ffffff;
     font-size: 30px;
     font-weight: 900;
-    /* text-align: left;
-    margin-left: 50px;
-    margin-top: 230px; */
     position: absolute;
     left: 40px;
     top: 230px;
@@ -299,38 +296,18 @@ span {
     height: 387px;
     background-color: #e10011;
     border-radius: 5px;
-    /* top: -30px; */
-}
-
-.wrapper-images_2 .img-in {
-    /* top: 1147px; */
 }
 
 .img-41 {
     width: 692px;
-    /* left: 185px; */
 }
 
 .img-51 {
     width: 328px;
-    /* left: 911px; */
 }
 
 .wrapper-images_2 .img-in {
     width: 328px;
-    /* top: 1570px; */
-}
-
-.img-61 {
-    /* left: 187px; */
-}
-
-.img-71 {
-    /* left: 548px; */
-}
-
-.img-81 {
-    /* left: 911px; */
 }
 
 .img-41,
