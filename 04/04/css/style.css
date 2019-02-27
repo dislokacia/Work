@@ -7,6 +7,15 @@ html, body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a0a7ad;
+    line-height: 1.2;
+    font-size: 14px;
+}
+
+h2 {
+    color: black;
+    font-weight: 500;
 }
 
 .wrapper-1 {
@@ -18,7 +27,7 @@ html, body {
 }
 
 .wrapper-2 {
-    padding-top: 11px;
+    padding-top: 9.5px;
 }
 
 .wrapper-2 img {
@@ -26,13 +35,27 @@ html, body {
 }
 
 .wrapper-3 {
-    padding-top: 1;
+    padding-top: 2px;
 }
 
 .wrapper-4 {
-    padding-top: 9px;
+    padding-top: 8px;
 }
 
 .wrapper-4 img {
     padding-bottom: 3px;
+}
+
+.wrapper-1, .wrapper-2, .wrapper-3, .wrapper-4 {
+    margin-top: 130px;
+}
+
+hr {
+    width: 35%;
+    color: #00E1ff;
+    background-color: #00E1ff;
+    size: 2px;
+    height: 2px;
+    border: none;
+    margin-bottom: 20px;
 }
