@@ -1,0 +1,148 @@
+/* styles goes here */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(253, 223, 127);
+    text-align: center;
+    margin-top: 60px;
+    -webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	-ms-perspective: 600px;
+	perspective: 600px;
+}
+
+.item {
+    position: relative;
+    height: 441px;
+    width: 361px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 3px #acacac;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    border: none;
+    -webkit-transition: all 0.3s ease;;
+    -moz-transition: all 0.3s ease;;
+    -o-transition: all 0.3s ease;;
+    transition: all 0.3s ease;
+}
+
+.item:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+h2 {
+    font-family: 'Miso';
+    font-weight: bold;
+    color:  #02995b;
+    font-size: 70px;
+    line-height: 24px;
+    margin: 0;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.item:hover h2 {
+    -webkit-transform: rotateY( 360deg );
+	-moz-transform: rotateY( 360deg );
+	-ms-transform: rotateY( 360deg );
+	-o-transform: rotateY( 360deg );
+	transform: rotateY( 360deg );
+}
+
+.effect {
+    position: absolute;
+    display: none;
+    -moz-transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+    -o-transition: all 0.8s ease-in-out;
+    -ms-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.item:hover .effect {
+    display: block;
+}
+
+h3 {
+    font-family: 'Miso';
+    color:  #333333;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    color:  #333333;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0;
+}
+
+.item-1 {
+    width: 360px;
+}
+
+.item-2 {
+    height: 500px;
+} 
+
+.item-2 h2 {
+    margin-bottom: 10px;
+}
+
+.item-3 {
+    box-shadow: 1px 2px 3px #acacac; 
+} 
+
+
+.smoke img {
+    margin-bottom: 10px;
+}
+
+.cup img {
+    margin-left: 20px;
+}
+
+.cup {
+    position: relative;
+}
+
+.bean {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
