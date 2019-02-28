@@ -102,6 +102,10 @@ p {
     margin: 0;
 }
 
+.item:hover p {
+    visibility: hidden;
+}
+
 .item-1 {
     width: 360px;
 }
