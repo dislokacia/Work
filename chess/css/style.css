@@ -1,0 +1,46 @@
+/* styles goes here */
+body {
+    font-size: 3em;
+}
+
+.square {
+    background-color: rgb(71, 71, 71);
+    height: 66.66px;
+    perspective: 600px;
+}
+
+.w {
+    background-color: rgb(138, 137, 136);
+}
+
+i {
+    padding: 9px 18px;
+}
+
+.fa-chess-queen {
+    padding-left: 9px;
+}
+
+.fa-chess-king {
+    padding-left: 12px;
+}
+
+.fa-chess-knight {
+    padding-left: 16px;
+}
+
+.fa-chess-rook {
+    padding-left: 16px;
+}
+
+.white-figures i {
+    color: #fff;
+}
+
+i:hover {
+    transform: scale(1.1);
+}
+
+.margin {
+    margin-top: 10vh;
+} 
