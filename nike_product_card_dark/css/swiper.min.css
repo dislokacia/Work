@@ -239,8 +239,8 @@
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     z-index: 10;
-    bottom: 36.4%;
-    left: 38%;
+    bottom: 20%;
+    left: 30%;
 }
 
 .swiper-pagination.swiper-pagination-hidden {
@@ -312,7 +312,7 @@
     border-radius: 100%;
     /* background: #000; */
     opacity: 1;
-    margin-right: 6px;
+    margin-right: 0.6em;
 }
 
 .swiper-pagination-bullet:first-child {
@@ -453,7 +453,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-white .swiper-pagination-bullet-active {
     background: transparent;
     border: 1px solid white;
-    zoom: 1.8;
+    transform: scale(1.8);
     margin-left: 8px;
 }
 
