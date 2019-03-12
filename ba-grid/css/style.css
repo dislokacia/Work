@@ -1,0 +1,11 @@
+/* styles goes here */
+img {
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+h1 {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
