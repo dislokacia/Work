@@ -36,8 +36,8 @@ body {
     fill:#A51440;
     stroke-dasharray: 1000;
     opacity: 10;
-    -webkit-animation: animate1 4s cubic-bezier(0,0.23,1,.1);
-            animation: animate1 4s cubic-bezier(0,0.23,1,.1);
+    -webkit-animation: animate1 6s cubic-bezier(0,0.23,1,.1);
+            animation: animate1 6s cubic-bezier(0,0.23,1,.1);
 }
 
 .text path {
