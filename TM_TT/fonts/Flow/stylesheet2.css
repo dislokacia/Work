@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Flow';
+    src: url('Flow.woff2') format('woff2'),
+        url('Flow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
