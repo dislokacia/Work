@@ -381,18 +381,23 @@ body {
           }
     }
 }
-.btn--primary {
-    border-radius: 0;
-    background-color: #ffc000;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    padding: 18px 14px 18px 14px;
-    width: 102%;
+.btn {
+    background: none;
+    border: none;
     cursor: pointer;
-    &:hover {
-        background-color: #e2ad0c;
+
+    &--primary {
+        border-radius: 0;
+        background-color: #ffc000;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        text-transform: uppercase;
+        padding: 18px 14px 18px 14px;
+        width: 102%;
+        &:hover {
+            background-color: #e2ad0c;
+        }
     }
 }
 
