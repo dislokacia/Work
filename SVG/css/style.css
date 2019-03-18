@@ -1,0 +1,140 @@
+/* styles goes here */
+body {
+    background-image: url(../img/jan-styblo-1430097-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Tempus Sans ITC';
+    color: #fff;
+}
+
+.wrapper .text {
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 50%;
+}
+
+.beetroot, .text {
+    display: inline-block;
+}
+
+.wrapper .beetroot {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 10%;
+}
+
+.beetroot path {
+    stroke: #A51440;
+    fill:#A51440;
+    stroke-dasharray: 1000;
+    opacity: 10;
+    -webkit-animation: animate1 6s cubic-bezier(0,0.23,1,.1);
+            animation: animate1 6s cubic-bezier(0,0.23,1,.1);
+}
+
+.text path {
+    stroke: currentColor;
+    fill:currentColor;
+    stroke-dasharray: 1000;
+    opacity: 10;
+    -webkit-animation: animate2 4s cubic-bezier(0,0.23,1,.1);
+            animation: animate2 4s cubic-bezier(0,0.23,1,.1);
+}
+
+@-webkit-keyframes animate1 {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000; 
+    }
+    30% {
+         opacity: 10;
+         fill: none;
+        stroke-dashoffset: 1000;
+    }   
+    
+    90% {
+        fill: rgba(165,	20,	64, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(165,	20,	64, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate1 {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000; 
+    }
+    30% {
+         opacity: 10;
+         fill: none;
+        stroke-dashoffset: 1000;
+    }   
+    
+    90% {
+        fill: rgba(165,	20,	64, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(165,	20,	64, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes animate2 {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000; 
+    }
+    30% {
+         opacity: 10;
+         fill: none;
+        stroke-dashoffset: 1000;
+    }   
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        opacity: 0;
+        fill: none;
+        stroke-dashoffset: 1000; 
+    }
+    30% {
+         opacity: 10;
+         fill: none;
+        stroke-dashoffset: 1000;
+    }   
+    90% {
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: rgba(255, 255, 255, 1);
+        stroke-dashoffset: 0;
+    }
+}
