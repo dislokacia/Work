@@ -17,7 +17,7 @@
   position: absolute;
   border: 1px solid #444;
   border-radius: 5px;
-  min-height: 230px;
+  height: 230px;
   width: 100%;
   left: 0;
   top: 0;
@@ -36,9 +36,9 @@
   transform: rotateY(-180deg) translateZ(0);
 }
 
-.panel__top {
-  min-height: 15vh;
-}
+/* .panel__top {
+  height: 15vh;
+} */
 
 .panel__corner__number {
   position: absolute;
@@ -107,7 +107,7 @@
 }
 
 .panel__bottom {
-  min-height: 15vh;
+  /* height: 15vh; */
   -webkit-transform: scale(-1, -1);
           transform: scale(-1, -1);
 }
@@ -156,7 +156,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  min-height: 230px;
+  height: 230px;
   width: 100%;
   border-radius: 5px;
   -webkit-backface-visibility: hidden;
