@@ -237,6 +237,10 @@ body {
         height: auto;
         background-color: #333;
         opacity: 0.9;
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            min-height: 689px;
+            margin-top: -2px;
+        }
     }
 }
 
@@ -579,9 +583,10 @@ body {
         height: auto;
         background-color: #333;
         opacity: 0.9;
-        // @media (min-width: 1024px) and (max-width: 1199px) {
-        //     min-height: 732px;
-        // }
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            min-height: 734px;
+            margin-top: -2px;
+        }
     }
 }
 

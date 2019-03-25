@@ -230,6 +230,13 @@ body {
   opacity: 0.9;
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .section-why::after {
+    min-height: 689px;
+    margin-top: -2px;
+  }
+}
+
 .why-us {
   position: relative;
   z-index: 1;
@@ -559,6 +566,13 @@ body {
   height: auto;
   background-color: #333;
   opacity: 0.9;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .section-tourist::after {
+    min-height: 734px;
+    margin-top: -2px;
+  }
 }
 
 .tourist {
