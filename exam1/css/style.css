@@ -118,11 +118,12 @@ body {
 }
 
 .scroll {
-  margin-top: 118px;
   text-align: center;
   letter-spacing: 1.1px;
   color: #fff;
   padding-left: 7px;
+  width: 18%;
+  margin: 118px auto 0 auto;
 }
 
 .scroll:hover {
@@ -439,6 +440,15 @@ body {
   z-index: -1;
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .wrapper-black__icon::after {
+    width: 170%;
+    height: 120%;
+    top: -10%;
+    left: -30%;
+  }
+}
+
 .wrapper-black__text {
   padding-top: 27px;
 }
@@ -451,6 +461,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .shape {
+    top: 31%;
+  }
 }
 
 .icon-search {

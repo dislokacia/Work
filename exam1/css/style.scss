@@ -124,11 +124,12 @@ body {
 }
 
 .scroll {
-    margin-top: 118px;
     text-align: center;
     letter-spacing: 1.1px;
     color: #fff;
     padding-left: 7px;
+    width: 18%;
+    margin: 118px auto 0 auto;
 
     &:hover {
         color: #00a2ff;
@@ -449,6 +450,12 @@ body {
             left: 0;
             background-color: #333;
             z-index: -1;
+            @media (min-width: 1024px) and (max-width: 1199px) {
+                width: 170%;
+                height: 120%;
+                top: -10%;
+                left: -30%;
+            }
         }
     }
 
@@ -464,6 +471,9 @@ body {
     top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        top: 31%;
+    }
 }
 
 .icon-search {
