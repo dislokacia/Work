@@ -445,7 +445,7 @@ body {
     width: 170%;
     height: 120%;
     top: -10%;
-    left: -30%;
+    left: -32%;
   }
 }
 
@@ -513,6 +513,13 @@ body {
   padding-left: 30px;
   margin-top: 230px;
   padding-top: 30px;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .spain {
+    padding-left: 25px;
+    padding-top: 15px;
+  }
 }
 
 .spain::after {
@@ -586,7 +593,7 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .section-tourist::after {
-    min-height: 734px;
+    min-height: 735px;
     margin-top: -2px;
   }
 }
@@ -630,7 +637,8 @@ body {
 
 @media (min-width: 1024px) and (max-width: 1199px) {
   .wrapper-tourist::after {
-    width: 97%;
+    width: 93%;
+    margin-left: 35px;
   }
 }
 
@@ -652,6 +660,12 @@ body {
   padding-left: 29px;
   position: relative;
   z-index: 1;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .wrapper-tourist__info {
+    padding-right: 20px;
+  }
 }
 
 .wrapper-tourist__author {
@@ -731,5 +745,17 @@ body {
 .social__link--last {
   margin-right: 0;
   padding-right: 0;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .indent__left {
+    padding-right: 35px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .indent__right {
+    padding-left: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

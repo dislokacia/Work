@@ -454,7 +454,7 @@ body {
                 width: 170%;
                 height: 120%;
                 top: -10%;
-                left: -30%;
+                left: -32%;
             }
         }
     }
@@ -523,6 +523,10 @@ body {
     padding-left: 30px;
     margin-top: 230px;
     padding-top: 30px;
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        padding-left: 25px;
+        padding-top: 15px;
+    }
 
     &::after {
         content: '';
@@ -594,7 +598,7 @@ body {
         background-color: #333;
         opacity: 0.9;
         @media (min-width: 1024px) and (max-width: 1199px) {
-            min-height: 734px;
+            min-height: 735px;
             margin-top: -2px;
         }
     }
@@ -638,7 +642,8 @@ body {
         z-index: 0;
 
         @media (min-width: 1024px) and (max-width: 1199px) {
-            width: 97%;
+            width: 93%;
+            margin-left: 35px;
             // min-height: 300px;
         }
     }
@@ -660,6 +665,9 @@ body {
         padding-left: 29px;
         position: relative;
         z-index: 1;
+        @media (min-width: 1024px) and (max-width: 1199px) {
+            padding-right: 20px;
+        }
     }
 
     &__author {
@@ -742,5 +750,17 @@ body {
             margin-right: 0;
             padding-right: 0;
         }
+    }
+}
+
+.indent__left {
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        padding-right: 35px;
+    }
+}
+
+.indent__right {
+    @media (min-width: 1024px) and (max-width: 1199px) {
+        padding-left: 35px;
     }
 }
