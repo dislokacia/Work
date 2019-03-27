@@ -126,18 +126,23 @@ body {
   margin: 118px auto 0 auto;
 }
 
-.scroll:hover {
+.scroll__wrapper:hover {
   color: #00a2ff;
 }
 
-.scroll:hover .scroll__link {
+.scroll__wrapper:hover .scroll__link {
   color: #00a2ff;
 }
 
 .scroll__link {
   text-decoration: none;
   color: #fff;
-  padding: 25px;
+  padding: 25px 48px;
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .scroll__link {
+    padding: 25px 37px;
+  }
 }
 
 .scroll__text {
