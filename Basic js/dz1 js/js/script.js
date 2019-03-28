@@ -67,30 +67,39 @@ var checkedValue;
 
 // validating if we get an empty data
 // this function checks if user gave the empty data to us and in this case shows message and asks new data to save it in the variable
-function checking(checkedValue) {
-    if (checkedValue == '') {
-        checkedValue = prompt( 'Вы не ввели данные, попробуйте снова', 'не оставляйте поле пустым' );
-        checking(checkedValue); 
-    }
-}
+// function checking(checkedValue) {
+//     if (checkedValue == '') {
+//         checkedValue = prompt( 'Вы не ввели данные, попробуйте снова', 'не оставляйте поле пустым' );
+//         checking(checkedValue); 
+//     }
+// }
 
 // asking for the name of the user and assigning the value to the variable 'name' and validating it
 name = prompt( 'Введите Ваше имя' , 'Вася' );
-if (name == '') {
-    checking(name);
+// if (name == '') {
+//     checking(name);
+// }
+while (name == '') {
+    name = prompt( 'Введите корректное имя', 'Вася' );
 }
 
 
 // asking for the profession of the user and assigning the value to the variable 'profession' and validating it
 profession = prompt( 'Введите название Вашей профессии' , 'учитель' );
-if (profession == '') {
-    checking(profession);
+// if (profession == '') {
+//     checking(profession);
+// }
+while (profession == '') {
+    profession = prompt( 'Введите Вашу профессию, плиз', 'мойдодыр' );
 }
 
 // asking for the experience of the user and assigning the value to the variable 'experience' and validating it
 experience = prompt( 'Сколько лет Вы работаете по этой профессии?' , 10 );
-if (experience == '') {
-    checking(experience);
+// if (experience == '') {
+//     checking(experience);
+// }
+while (experience == '') {
+    experience = prompt( 'Введите Ваш опыт работы, плиз', '4 отсидки' );
 }
 
 //calculating remainder of the division by 10 to get the last sign of the 'experience' and validating it
@@ -98,14 +107,20 @@ lastNumber = experience % 10;
 
 // asking for the user's salary in dollars per month and assigning the value to the variable 'salaryDollars' and validating it
 salaryDollars = prompt( 'Какова Ваша заработная плата в долларах за 1 месяц?' , 500 );
-if (salaryDollars == '') {
-    checking(salaryDollars);
+// if (salaryDollars == '') {
+//     checking(salaryDollars);
+// }
+while (salaryDollars == '') {
+    salaryDollars = prompt( 'Введите Вашу з\п в баксах, плиз', 11111 );
 }
 
 // asking for the user's salary in hryvnas per month and assigning the value to the variable 'salaryHryvnas' and validating it
 salaryHryvnas = prompt( 'Какова Ваша заработная плата в гривнах за 1 месяц?' , 15000 );
-if (salaryHryvnas == '') {
-    checking(salaryHryvnas);
+// if (salaryHryvnas == '') {
+//     checking(salaryHryvnas);
+// }
+while (salaryHryvnas == '') {
+    salaryHryvnas = prompt( 'Введите Вашу з\п в гривеньках, плиз', 111222 );
 }
 
 // Assigning the value to the variable 'years'. It will get the value depending on the value of 'lastNumber' variable.
