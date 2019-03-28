@@ -79,6 +79,7 @@ name = prompt( 'Введите Ваше имя' , 'Вася' );
 // if (name == '') {
 //     checking(name);
 // }
+// if user sends empty string, then we show the message and asking to resend correct value, checking it on correctness and assign to variable
 while (name == '') {
     name = prompt( 'Введите корректное имя', 'Вася' );
 }
@@ -89,6 +90,7 @@ profession = prompt( 'Введите название Вашей професс�
 // if (profession == '') {
 //     checking(profession);
 // }
+// if user sends empty string, then we show the message and asking to resend correct value, checking it on correctness and assign to variable
 while (profession == '') {
     profession = prompt( 'Введите Вашу профессию, плиз', 'мойдодыр' );
 }
@@ -98,6 +100,7 @@ experience = prompt( 'Сколько лет Вы работаете по это�
 // if (experience == '') {
 //     checking(experience);
 // }
+// if user sends empty string, then we show the message and asking to resend correct value, checking it on correctness and assign to variable
 while (experience == '') {
     experience = prompt( 'Введите Ваш опыт работы, плиз', '4 отсидки' );
 }
@@ -110,6 +113,7 @@ salaryDollars = prompt( 'Какова Ваша заработная плата �
 // if (salaryDollars == '') {
 //     checking(salaryDollars);
 // }
+// if user sends empty string, then we show the message and asking to resend correct value, checking it on correctness and assign to variable
 while (salaryDollars == '') {
     salaryDollars = prompt( 'Введите Вашу з\п в баксах, плиз', 11111 );
 }
@@ -119,6 +123,7 @@ salaryHryvnas = prompt( 'Какова Ваша заработная плата �
 // if (salaryHryvnas == '') {
 //     checking(salaryHryvnas);
 // }
+// if user sends empty string, then we show the message and asking to resend correct value, checking it on correctness and assign to variable
 while (salaryHryvnas == '') {
     salaryHryvnas = prompt( 'Введите Вашу з\п в гривеньках, плиз', 111222 );
 }
