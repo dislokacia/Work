@@ -33,18 +33,18 @@ login = prompt( 'Введите логин' );
 //     break;  // if all right - breaking the app
 // }
 
-
-if ( login == 'Админ' ) {
-    password = prompt( 'Введите пароль' );
-    if ( password == 'Черный Властелин' ) {
-        alert( 'С возвращением в Мордор!' );
-    } else if ( password == null ) {
-        alert( 'Вход отменен' );
-    } else {
-        alert( 'Ха-ха! Пароль неверен! Шах и мат, досвидули!' );
+// begin switch/case
+if ( login == 'Админ' ) {       //if login = 'Админ'
+    password = prompt( 'Введите пароль' );      // then asking for password
+    if ( password == 'Черный Властелин' ) {     //if password = 'Черный Властелин'
+        alert( 'С возвращением в Мордор!' );    // writing 'С возвращением в Мордор!'
+    } else if ( password == null ) {            //if password was cancelled
+        alert( 'Вход отменен' );                // writing 'Вход отменен'
+    } else {                                    // if password = something else
+        alert( 'Ха-ха! Пароль неверен! Шах и мат, досвидули!' );    // writing 'Ха-ха! Пароль неверен! Шах и мат, досвидули!'
     }
-} else if ( login == null) {
-    alert( 'Вход отменен' );
-} else {
-    alert( 'Я вас не знаю, уходите' );
+} else if ( login == null) {        //if login was cancelled
+    alert( 'Вход отменен' );        // writing 'Вход отменен'
+} else {                            // if login = something else
+    alert( 'Я вас не знаю, уходите' );     //then writing 'Я вас не знаю, уходите' 
 }
