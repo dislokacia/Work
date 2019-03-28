@@ -58,24 +58,55 @@ var hryvnas;
  * @type {string}
  */
 var years;
+/**
+ * @type {string, number}
+*/
+var checkedValue;
 
-// asking for the name of the user and assigning the value to the variable 'name'
+
+
+// validating if we get an empty data
+// this function checks if user gave the empty data to us and in this case shows message and asks new data to save it in the variable
+function checking(checkedValue) {
+    if (checkedValue == '') {
+        checkedValue = prompt( 'Вы не ввели данные, попробуйте снова', 'не оставляйте поле пустым' );
+        checking(checkedValue); 
+    }
+}
+
+// asking for the name of the user and assigning the value to the variable 'name' and validating it
 name = prompt( 'Введите Ваше имя' , 'Вася' );
+if (name == '') {
+    checking(name);
+}
 
-// asking for the profession of the user and assigning the value to the variable 'profession'
+
+// asking for the profession of the user and assigning the value to the variable 'profession' and validating it
 profession = prompt( 'Введите название Вашей профессии' , 'учитель' );
+if (profession == '') {
+    checking(profession);
+}
 
-// asking for the experience of the user and assigning the value to the variable 'experience'
+// asking for the experience of the user and assigning the value to the variable 'experience' and validating it
 experience = prompt( 'Сколько лет Вы работаете по этой профессии?' , 10 );
+if (experience == '') {
+    checking(experience);
+}
 
-//calculating remainder of the division by 10 to get the last sign of the 'experience'
+//calculating remainder of the division by 10 to get the last sign of the 'experience' and validating it
 lastNumber = experience % 10;
 
-// asking for the user's salary in dollars per month and assigning the value to the variable 'salaryDollars'
+// asking for the user's salary in dollars per month and assigning the value to the variable 'salaryDollars' and validating it
 salaryDollars = prompt( 'Какова Ваша заработная плата в долларах за 1 месяц?' , 500 );
+if (salaryDollars == '') {
+    checking(salaryDollars);
+}
 
-// asking for the user's salary in hryvnas per month and assigning the value to the variable 'salaryHryvnas'
+// asking for the user's salary in hryvnas per month and assigning the value to the variable 'salaryHryvnas' and validating it
 salaryHryvnas = prompt( 'Какова Ваша заработная плата в гривнах за 1 месяц?' , 15000 );
+if (salaryHryvnas == '') {
+    checking(salaryHryvnas);
+}
 
 // Assigning the value to the variable 'years'. It will get the value depending on the value of 'lastNumber' variable.
 // if 'lastNumber' = 0, then 'лет' will be assigned to 'years'
