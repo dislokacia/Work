@@ -1,0 +1,39 @@
+/* styles goes here */
+
+ol{
+    counter-reset: listCounter;
+    font-family: Arial, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+li:before {
+    counter-increment: listCounter;
+    content:counter(listCounter);
+    color: white;
+    background: cadetblue;
+    display: inline-block;
+    text-align: center;
+    margin: 5px 10px;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.num {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin-bottom: 20px;
+    background-color: tan;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.num:hover {
+    box-shadow: 0 0 4px deepskyblue;
+}
