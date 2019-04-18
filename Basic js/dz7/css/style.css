@@ -1,1 +1,33 @@
 /* styles goes here */
+#div,
+#textarea {
+  height: 150px;
+  width: 400px;
+  font-family: sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 5px gray;
+  border: 1px solid rgb(145, 240, 145);
+}
+
+#div {
+  padding: 2px;
+  border: 1px solid black;
+}
+
+#textarea {
+  display: none;
+  border: 3px solid rgb(243, 71, 186);
+  padding: 0px;
+}
+
+button {
+    width: 125px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: rgb(196, 28, 28);
+    color: wheat;
+    outline: none;
+}
+button:focus, button:hover {
+    background-color: rgb(206, 111, 111);
+}

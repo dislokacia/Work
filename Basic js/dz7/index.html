@@ -1,93 +1,25 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Rich Text Editor</title>
-<script type="text/javascript">
-var oDoc, sDefTxt;
-
-function initDoc() {
-  oDoc = document.getElementById("textBox");
-  sDefTxt = oDoc.innerHTML;
-  if (document.compForm.switchMode.checked) { setDocMode(true); }
-}
-
-function formatDoc(sCmd, sValue) {
-  if (validateMode()) { document.execCommand(sCmd, false, sValue); oDoc.focus(); }
-}
-
-function validateMode() {
-  if (!document.compForm.switchMode.checked) { return true ; }
-  alert("Uncheck \"Show HTML\".");
-  oDoc.focus();
-  return false;
-}
-
-function setDocMode(bToSource) {
-  var oContent;
-  if (bToSource) {
-    oContent = document.createTextNode(oDoc.innerHTML);
-    oDoc.innerHTML = "";
-    var oPre = document.createElement("pre");
-    oDoc.contentEditable = false;
-    oPre.id = "sourceText";
-    oPre.contentEditable = true;
-    oPre.appendChild(oContent);
-    oDoc.appendChild(oPre);
-    document.execCommand("defaultParagraphSeparator", false, "div");
-  } else {
-    if (document.all) {
-      oDoc.innerHTML = oDoc.innerText;
-    } else {
-      oContent = document.createRange();
-      oContent.selectNodeContents(oDoc.firstChild);
-      oDoc.innerHTML = oContent.toString();
-    }
-    oDoc.contentEditable = true;
-  }
-  oDoc.focus();
-}
-
-function printDoc() {
-  if (!validateMode()) { return; }
-  var oPrntWin = window.open("","_blank","width=450,height=470,left=400,top=100,menubar=yes,toolbar=no,location=no,scrollbars=yes");
-  oPrntWin.document.open();
-  oPrntWin.document.write("<!doctype html><html><head><title>Print<\/title><\/head><body onload=\"print();\">" + oDoc.innerHTML + "<\/body><\/html>");
-  oPrntWin.document.close();
-}
-</script>
-<style type="text/css">
-.intLink { cursor: pointer; }
-img.intLink { border: 0; }
-#toolBar1 select { font-size:10px; }
-#textBox {
-  width: 540px;
-  height: 200px;
-  border: 3px powderblue solid;
-  padding: 12px;
-  overflow: auto;
-  background-color: antiquewhite;
-  cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-  color: chocolate;
-}
-#textBox:hover {
-    background-color: azure;
-}
-#textBox #sourceText {
-  padding: 0;
-  margin: 0;
-  min-width: 498px;
-  min-height: 200px;
-}
-#editMode label { cursor: pointer; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>div=textarea</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body onload="initDoc();">
-<form name="compForm" method="post" action="javascript:void(0);" onsubmit="if(validateMode()){this.myDoc.value=oDoc.innerHTML;return true;}return false;">
-<div id="textBox" contenteditable="true"><p>Lorem ipsum</p></div>
-<!-- <p id="editMode"><input type="checkbox" name="switchMode" id="switchBox" onchange="setDocMode(this.checked);" /> <label for="switchBox">Show HTML</label></p> -->
-<!-- <p><input type="submit" value="Send" /></p> -->
-</form>
+
+<body>
+    <textarea id="textarea"></textarea>
+    <div id="div">Текст</div>
+    <button onclick="edit()" id="edit" type="button">Edit</button>
+    <button onclick="save()" id="save" type="button">Save</button>
+    <button onclick="cancel()" id="cancel" type="button">Cancel</button>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
