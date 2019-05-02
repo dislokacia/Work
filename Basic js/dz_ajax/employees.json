@@ -1,0 +1,43 @@
+[
+    {
+        "name": "Aimee",
+        "inoffice": "out"
+    },
+    {
+        "name": "Amit",
+        "inoffice": "out"
+    },{
+        "name": "Andrew",
+        "inoffice": "in"
+    },{
+        "name": "Ben",
+        "inoffice": "in"
+    },{
+        "name": "Elizabeth",
+        "inoffice": "in"
+    },{
+        "name": "Guil",
+        "inoffice": "out"
+    },{
+        "name": "Hampton",
+        "inoffice": "in"
+    },{
+        "name": "Jason",
+        "inoffice": "in"
+    },{
+        "name": "Lainie",
+        "inoffice": "in"
+    },{
+        "name": "Kenneth",
+        "inoffice": "out"
+    },{
+        "name": "Pasan",
+        "inoffice": "in"
+    },{
+        "name": "Shawna",
+        "inoffice": "in"
+    },{
+        "name": "Zac",
+        "inoffice": "out"
+    }
+]

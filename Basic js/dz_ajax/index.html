@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AJAX</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Corporate Intranet</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h2>Lorem Ipsum Headline</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima rerum laudantium animi ullam, ratione nihil molestiae voluptas sequi fugiat nam alias sint placeat debitis deserunt sunt doloribus quibusdam neque. Ab fuga delectus nam illo quam inventore deleniti iste, nemo, magnam iure eius fugit. Eaque repellendus vitae mollitia saepe tenetur dicta optio, magnam eius molestias nulla expedita assumenda illo fugit, molestiae iure! Dicta aspernatur voluptatem aperiam natus facilis consequuntur et reiciendis nostrum consequatur ipsa. Suscipit quibusdam magni fuga autem modi, voluptatem laborum, adipisci ratione error similique velit quod sunt. Inventore quas illo dolores quasi recusandae assumenda cupiditate accusantium ab ratione exercitationem.</p>
+                <p>Cum dolor assumenda facere vel sequi, nam ipsa autem ea, doloremque eveniet consectetur perferendis beatae error adipisci, veritatis officia illo qui pariatur! Aut, voluptate distinctio expedita temporibus dolor facilis architecto fugiat molestiae est laboriosam cum in? Non ipsa voluptatibus asperiores adipisci distinctio, ullam nam! Error aperiam, nisi id cupiditate veniam eaque soluta sunt dolorem, rem pariatur reprehenderit. Officiis, quisquam harum ex asperiores architecto quos distinctio iste perspiciatis temporibus dolores est! Corrupti accusantium vel vitae, rem enim adipisci suscipit non, mollitia veniam molestiae quod, earum et alias quasi! Itaque, necessitatibus magni non, illum quo sed ad error saepe quos temporibus quod.</p>
+                <p>Veniam, ipsam suscipit! Reiciendis earum eius doloribus. Beatae minus odio repellat asperiores, quo, sit perspiciatis placeat tenetur officia eveniet quam earum ducimus alias doloremque voluptates animi harum laboriosam saepe veniam aspernatur eos enim. Eaque commodi ut aperiam quos quibusdam necessitatibus sed, ex praesentium cum architecto? Consequuntur veniam, aliquid, ex maiores at est corporis cumque minus ratione qui pariatur nobis accusantium enim eaque eligendi itaque nulla ab incidunt iure ipsa. Dignissimos repudiandae neque deleniti dolor doloribus. Corrupti et porro facilis aperiam, minima aliquam excepturi architecto, fugit explicabo quibusdam dolorum blanditiis consequuntur asperiores a tenetur similique culpa ab cum, labore doloremque tempore!</p>
+                <h3>Copyright, The Intranet Corporation</h3>
+            </div>
+            <div class="col-4">
+                <div id="employeeList">
+                    <ul id="list">Employee Office Status
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="button" onclick="loadList()">Загрузить список работников</button>
+
+    <script>
+    function loadList() {
+
+var xhr = new XMLHttpRequest();
+
+xhr.open('GET', 'employees.json', true);
+
+xhr.onreadystatechange = function() {
+  if (xhr.readyState != 4) return;
+
+  button.parentNode.removeChild(button);
+
+  if (xhr.status != 200) {
+    // обработать ошибку
+    alert(xhr.status + ': ' + xhr.statusText);
+  } else {
+    try {
+      var employees = JSON.parse(xhr.responseText);
+    } catch (e) {
+      alert("Некорректный ответ " + e.message);
+    }
+    showList(employees);
+  }
+
+}
+
+xhr.send();
+
+button.innerHTML = 'Загружаю...';
+button.disabled = true;
+}
+
+function showList(employees) {
+
+    employees.forEach(function(employee) {
+  var li = list.appendChild(document.createElement('li'));
+  li.innerHTML = employee.name;
+  li.className = employee.inoffice;
+});
+
+}
+    </script>
+
+</body>
+
+</html>
