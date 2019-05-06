@@ -21,7 +21,7 @@ li {
 
 li::before {
     content: 'in';
-    background-color: red;
+    background-color: rgb(65, 224, 65);
     padding: 5px 10px;
     font-size: 14px;
     color: white;
@@ -54,6 +54,6 @@ p {
 
 .out::before {
     content: 'out';
-    background-color: rgb(65, 224, 65);
+    background-color: red;
     padding: 5px;
 }
