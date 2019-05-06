@@ -53,5 +53,7 @@ p {
 }
 
 .out::before {
+    content: 'out';
     background-color: rgb(65, 224, 65);
+    padding: 5px;
 }
